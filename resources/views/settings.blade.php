@@ -15,7 +15,7 @@
             <a href="{{ route('dashboard') }}" class="nav-item">Главная</a>
             <a href="{{ route('devices') }}" class="nav-item">Устройства</a>
             <a href="{{ route('checks') }}" class="nav-item">Проверки</a>
-            <a href="{{ route('settings') }}" class="nav-item active">Настройки</a>
+            <a href="{{ route('settings') }}" class="nav-item nav-item-section active">Настройки</a>
             <a href="{{ route('connections') }}" class="nav-item">Связь</a>
         </nav>
         <div class="sidebar-footer">
@@ -31,7 +31,6 @@
 
         <section class="page-content">
             <div class="settings-grid">
-                <!-- Настройки учетной записи -->
                 <div class="settings-card">
                     <div class="card-title">Настройки учетной записи</div>
                     <form class="form" id="accountForm">

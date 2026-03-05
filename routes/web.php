@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
+Route::get('/checks', function () {
     return view('checks');
 })->name('checks');
 
@@ -30,7 +30,7 @@ Route::get('/connections', function () {
 })->name('connections');
 
 Route::get('/login', function () {
-    return 'Login page';
+    return view('login');
 })->name('login');
 
 

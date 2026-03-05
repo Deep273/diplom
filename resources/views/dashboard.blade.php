@@ -12,11 +12,11 @@
     <aside class="sidebar">
         <div class="sidebar-logo">DM</div>
         <nav class="sidebar-nav">
-            <a href="{{ route('dashboard') }}" class="nav-item">Главная</a>
+            <a href="{{ route('dashboard') }}" class="nav-item nav-item-section active">Главная</a>
             <a href="{{ route('devices') }}" class="nav-item">Устройства</a>
             <a href="{{ route('checks') }}" class="nav-item">Проверки</a>
             <a href="{{ route('settings') }}" class="nav-item">Настройки</a>
-            <a href="{{ route('connections') }}" class="nav-item active">Связь</a>
+            <a href="{{ route('connections') }}" class="nav-item">Связь</a>
         </nav>
         <div class="sidebar-footer">
             <span class="sidebar-user">admin</span>

@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Проверки</title>
-    <link rel="stylesheet" href="{{ asset('css/variables.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/checks.css') }}">
 </head>
 <body>
 <div class="layout">
@@ -13,7 +12,7 @@
         <nav class="sidebar-nav">
             <a href="{{ route('dashboard') }}" class="nav-item">Главная</a>
             <a href="{{ route('devices') }}" class="nav-item">Устройства</a>
-            <a href="{{ route('checks') }}" class="nav-item active">Проверки</a>
+            <a href="{{ route('checks') }}" class="nav-item nav-item-section active">Проверки</a>
             <a href="{{ route('settings') }}" class="nav-item">Настройки</a>
             <a href="{{ route('connections') }}" class="nav-item">Связь</a>
         </nav>
@@ -181,57 +180,6 @@
         </div>
     </div>
 </div>
-
-<style>
-    .btn-group {
-        display: flex;
-        gap: 6px;
-    }
-
-    .tag-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        align-items: center;
-        margin-top: 8px;
-    }
-
-    .tag {
-        padding: 4px 12px;
-        border-radius: 999px;
-        font-size: 13px;
-        font-weight: 500;
-        border: 1px solid transparent;
-    }
-
-    .tag.status-ok {
-        background: rgba(34,197,94,0.2);
-        color: #22c55e;
-        border-color: rgba(34,197,94,0.4);
-    }
-
-    .tag.status-warn {
-        background: rgba(245,158,11,0.2);
-        color: #f59e0b;
-        border-color: rgba(245,158,11,0.4);
-    }
-
-    .check-settings {
-        padding: 0 28px 24px;
-    }
-
-    .btn-danger {
-        background: linear-gradient(to right, #dc2626, #b91c1c);
-        color: #f9fafb;
-        box-shadow: 0 12px 30px rgba(220,38,38,0.45);
-    }
-
-    .modal.active,
-    .modal-overlay {
-        animation: modalFadeIn 0.2s ease-out;
-    }
-</style>
-
 <script>
     function openCheckModal(checkType) {
         const titles = {
